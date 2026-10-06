@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="rootPane" prefHeight="200.0" prefWidth="481.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.FXMLDocumentController">
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <items>
+            <ToggleButton fx:id="tttButton" mnemonicParsing="false" text="Tres en raya">
+               <toggleGroup>
+                  <ToggleGroup fx:id="toolBarGroup" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton fx:id="puzzleButton" mnemonicParsing="false" text="8-Puzzle" toggleGroup="$toolBarGroup" />
+            <ToggleButton fx:id="bolaButton" mnemonicParsing="false" text="Bola (S3)" toggleGroup="$toolBarGroup" />
+         </items>
+      </ToolBar>
+   </top>
+</BorderPane>
