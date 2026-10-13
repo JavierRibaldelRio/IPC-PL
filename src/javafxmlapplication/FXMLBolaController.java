@@ -48,11 +48,11 @@ public class FXMLBolaController implements Initializable {
         circulo.setOnMouseReleased(this::handleMouseRelease);
 
         //colorPick.valueProperty().addListener((a, b, c) ->{circulo.setFill(c);});
-        
-        relleno.
         circulo.fillProperty().bind(colorPick.valueProperty());
         circulo.strokeProperty().bind(colorPick.valueProperty());
-
+        // ??? -> Aquí falta que si está marcado el color de la bola  no se hacerlo con .bind()
+        
+        // Asignación del tamaño automático de la bola
         circulo.radiusProperty().bind(Bindings.min(gridBola.widthProperty().divide(10).subtract(4), gridBola.heightProperty().divide(10).subtract(4)));
     }
 

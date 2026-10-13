@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
@@ -32,6 +35,15 @@
       </GridPane>
       <ToolBar orientation="VERTICAL">
          <items>
+            <ToggleButton mnemonicParsing="false">
+               <graphic>
+                  <ImageView fx:id="relleno" fitHeight="77.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/Screenshot%20From%202026-10-06%2012-57-24.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
             <ColorPicker fx:id="colorPick" prefHeight="26.0" prefWidth="44.0" />
          </items>
       </ToolBar>
