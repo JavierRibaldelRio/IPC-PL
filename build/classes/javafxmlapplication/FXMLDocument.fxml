@@ -16,6 +16,7 @@
             </ToggleButton>
             <ToggleButton fx:id="puzzleButton" mnemonicParsing="false" text="8-Puzzle" toggleGroup="$toolBarGroup" />
             <ToggleButton fx:id="bolaButton" mnemonicParsing="false" text="Bola (S3)" toggleGroup="$toolBarGroup" />
+            <ToggleButton fx:id="menuButton" layoutX="180.0" layoutY="12.0" mnemonicParsing="false" text="Nueva Partida" toggleGroup="$toolBarGroup" />
          </items>
       </ToolBar>
    </top>

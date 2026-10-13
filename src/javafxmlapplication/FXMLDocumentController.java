@@ -33,11 +33,13 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private BorderPane rootPane;
     
-    private Node tttView = null , puzzleView =null, bolaView = null;
+    private Node tttView = null , puzzleView =null, bolaView = null, menuView = null;
     @FXML
     private ToggleGroup toolBarGroup;
     @FXML
     private ToggleButton bolaButton;
+    @FXML
+    private ToggleButton menuButton;
 
     //=========================================================
     // you must initialize here all related with the object 
@@ -64,6 +66,14 @@ public class FXMLDocumentController implements Initializable {
                     getClass().getResource("FXMLBola.fxml")
             );
             bolaView = bolaLoader.load();
+            
+            FXMLLoader menuLoader = new FXMLLoader(
+                    getClass().getResource("FXMLMenu.fxml")
+            );
+            menuView = menuLoader.load();
+            
+            
+                
 
         } catch (IOException e) {
         }
@@ -77,6 +87,9 @@ public class FXMLDocumentController implements Initializable {
             }
             else if (newT == bolaButton){
                 rootPane.setCenter(bolaView);
+            }
+            else if (newT == menuButton){
+                rootPane.setCenter(menuView);
             }
             
         });
